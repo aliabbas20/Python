@@ -1,0 +1,11 @@
+#filtering by defining function with list
+
+laptops={'Hp':50000,'Lenovo':60000,'ASUS':45000,'MacBook':120000}
+budget=float(input("Enter your budget : "))
+def filter_items(e):
+   if laptops[e]<=budget:
+       return True
+   else:
+      return False
+filtered_object=list(filter(filter_items,laptops))
+print("products are : ", filtered_object)
