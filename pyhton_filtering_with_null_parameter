@@ -1,0 +1,8 @@
+#Filter With None as a Function Parameter
+
+my_list = [5, -23, "", True, False, 0, 0.0, {}, []]
+
+filtered_object = filter(None, my_list)
+
+for element in filtered_object:
+   print(element)
